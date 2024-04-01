@@ -3,7 +3,7 @@ import TopBar from './TopBar'
 import ContentRowTop from './ContentRowTop'
 import Footer from './Footer'
 
-function ProductosNuevos() {
+function ContentWrapper() {
   return (
     <>
     {/* -- Content Wrapper -- */}
@@ -28,4 +28,4 @@ function ProductosNuevos() {
   )
 }
 
-export default ProductosNuevos
+export default ContentWrapper

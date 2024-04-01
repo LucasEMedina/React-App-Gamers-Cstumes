@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logoGamers from "../assets/images/logo.png"
 
 function SideBar() {
@@ -9,17 +10,17 @@ function SideBar() {
 
 			{/* -- Sidebar - Brand -- */}
 			<div className="sidebar-brand-icon">
-				<a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+				<Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
 					<img className="w-100 img-logo" src={logoGamers} alt="Digital House" />
-				</a>
+				</Link>
 			</div>
 
 			{/* -- Nav Item - Dashboard -- */}
 			<li className="nav-item active">
-				<a className="nav-link" href="/">	
-					<i class="bi bi-wrench fas fa-fw"></i>
+				<Link className="nav-link" to="/">	
+					<i className="bi bi-wrench fas fa-fw"></i>
 					<span> Dashboard Gamers </span>
-				</a>
+				</Link>
 			</li>
 
 			{/* -- Divider -- */}
@@ -31,7 +32,7 @@ function SideBar() {
 			{/* -- Nav Item - Pages -- */}
 			<li className="nav-item action-item">
 				<a className="nav-link collapsed" href="/">
-				<i class="bi bi-person-lines-fill fas fa-fw"></i>
+				<i className="bi bi-person-lines-fill fas fa-fw"></i>
 					<span>Personajes</span>
 				</a>
 			</li>
@@ -39,7 +40,7 @@ function SideBar() {
 			{/* -- Nav Item - Charts -- */}
 			<li className="nav-item action-item">
 				<a className="nav-link" href="/">
-				<i class="bi bi-tags-fill fas fa-fw"></i>
+				<i className="bi bi-tags-fill fas fa-fw"></i>
 					<span>Categorias</span>
 				</a>
 			</li>
@@ -47,7 +48,7 @@ function SideBar() {
 			{/* -- Nav Item - Tables -- */}
 			<li className="nav-item action-item">
 				<a className="nav-link" href="/">
-				<i class="bi bi-graph-up-arrow fas fa-fw"></i>
+				<i className="bi bi-graph-up-arrow fas fa-fw"></i>
 					<span>Ventas</span>
 				</a>
 			</li>

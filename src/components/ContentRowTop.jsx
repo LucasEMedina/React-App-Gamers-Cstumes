@@ -1,5 +1,7 @@
 import React from 'react'
-import mandalorian from "../assets/images/mandalorian.jpg"
+import { Link, Route } from 'react-router-dom'
+import Home from './Home'
+import ProductsList from './ProductsList'
 
 function ContentRowTop() {
   return (
@@ -23,7 +25,7 @@ function ContentRowTop() {
 									<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
 								</div>
 								<div className="col-auto">
-								<i class="bi bi-box-seam-fill fas fa-2x"></i>
+								<i className="bi bi-box-seam-fill fas fa-2x"></i>
 								</div>
 							</div>
 						</div>
@@ -40,7 +42,7 @@ function ContentRowTop() {
 									<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
 								</div>
 								<div className="col-auto">
-								<i class="fas bi bi-cash-coin fa-2x"></i>
+								<i className="fas bi bi-cash-coin fa-2x"></i>
 								</div>
 							</div>
 						</div>
@@ -58,7 +60,7 @@ function ContentRowTop() {
 									<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
 								</div>
 								<div className="col-auto">
-								<i class="bi bi-person-fill-check fas fa-2x"></i>
+								<i className="bi bi-person-fill-check fas fa-2x"></i>
 								</div>
 							</div>
 						</div>
@@ -68,64 +70,12 @@ function ContentRowTop() {
 			{/* -- Fin de Cards Cantidades -- */}
 			
 
-			{/* -- Ultimo producto agregado -- */}
-			<div className="row container-producto-listas">
-				{/* -- Last Movie in DB -- */}
-				<div className="col-lg-6 mb-4">
-					<div className="card shadow mb-4">
-						<div className="card-header py-3">
-							<h5 className="m-0 font-weight-bold text-gray-800">Ultimo producto agregado</h5>
-						</div>
-						<div className="card-body">
-							<div className="text-center">
-								<img className="img-fluid px-3 px-sm-4 mt-3 mb-4" src={mandalorian} alt=" Star Wars - Mandalorian " />
-							</div>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa citationem ratione aperiam voluptatum non corporis ratione aperiam voluptatum quae dolorem culpa ratione aperiam voluptatum?</p>
-							<a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver Detalle</a>
-						</div>
-					</div>
-				</div>
-				{/* -- End content row last movie in Data Base -- */}
-
-				{/* -- Genres in DB -- */}
-				<div className="listado-acciones col-lg-6 mb-4">						
-					<div className="card shadow mb-4">
-						<div className="card-header py-3">
-							<h5 className="m-0 font-weight-bold text-gray-800">Contenidos en Data Base</h5>
-						</div>
-						<div className="card-body">
-							<div className="mb-4">
-								<div className="card bg-dark text-white shadow">
-									<a className="card-body" href='/'>
-										Personajes
-									</a>
-								</div>
-							</div>
-							<div className="mb-4">
-								<div className="card bg-dark text-white shadow">
-									<a className="card-body" href='/'>
-										Categorias
-									</a>
-								</div>
-							</div>
-							<div className="mb-4">
-								<div className="card bg-dark text-white shadow">
-									<a className="card-body" href='/'>
-										Productos
-									</a>	
-								</div>
-							</div>
-							<div className="mb-4">
-								<div className="card bg-dark text-white shadow">
-									<a className="card-body" href='/'>
-										Ventas
-									</a>
-								</div>
-							</div>
-							</div>
-						</div>
-					</div>
-			</div>
+			{/* -- Contenido Home -- */}
+			<Home/>
+			{/* <Route exact path='/' component={Home} /> */}
+			{/* <Route exact path='/productsList' component={ProductsList} /> */}
+			<ProductsList/>
+			
 		</div>
 			{/* --End Content Row Top-- */}
     </>
