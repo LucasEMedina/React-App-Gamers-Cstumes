@@ -1,8 +1,9 @@
 
-import { Link, Route } from 'react-router-dom'
-import mandalorian from "../assets/images/mandalorian.jpg"
+import React from 'react';
+import { Link, Route } from 'react-router-dom';
+import mandalorian from "../assets/images/mandalorian.jpg";
 
-function Home() {
+function Inicio() {
   return (
     <>
     <div className="row container-producto-listas">
@@ -32,16 +33,16 @@ function Home() {
                 <div className="card-body">
                     <div className="mb-4">
                         <div className="card bg-dark text-white shadow">
-                            <a className="card-body" href='/'>
+                            <Link className="card-body" to='/personajesList'>
                                 Personajes
-                            </a>
+                            </Link>	
                         </div>
                     </div>
                     <div className="mb-4">
                         <div className="card bg-dark text-white shadow">
-                            <a className="card-body" href='/'>
+                            <Link className="card-body" to='/categoriasList'>
                                 Categorias
-                            </a>
+                            </Link>	
                         </div>
                     </div>
                     <div className="mb-4">
@@ -68,4 +69,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Inicio

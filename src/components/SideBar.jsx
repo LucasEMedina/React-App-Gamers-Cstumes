@@ -31,26 +31,26 @@ function SideBar() {
 
 			{/* -- Nav Item - Pages -- */}
 			<li className="nav-item action-item">
-				<a className="nav-link collapsed" href="/">
+				<Link className="nav-link collapsed" to="/personajesList">
 				<i className="bi bi-person-lines-fill fas fa-fw"></i>
 					<span>Personajes</span>
-				</a>
+				</Link>
 			</li>
 
 			{/* -- Nav Item - Charts -- */}
 			<li className="nav-item action-item">
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to="/categoriasList">
 				<i className="bi bi-tags-fill fas fa-fw"></i>
 					<span>Categorias</span>
-				</a>
+				</Link>
 			</li>
 
 			{/* -- Nav Item - Tables -- */}
 			<li className="nav-item action-item">
-				<a className="nav-link" href="/">
+				<Link className="nav-link" to="/productsList">
 				<i className="bi bi-graph-up-arrow fas fa-fw"></i>
-					<span>Ventas</span>
-				</a>
+					<span>Productos</span>
+				</Link>
 			</li>
 
 			{/* -- Divider -- */}

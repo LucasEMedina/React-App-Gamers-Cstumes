@@ -95,3 +95,34 @@
 .card-body a {
     color: #ffff;
 }
+
+.listado-acciones {
+width: 100%;
+max-width: 100%!important;
+text-align: center;
+}
+
+.categ-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categ-btn-div{
+    width: 50%;
+    align-self: center;
+}
+
+.icon-categ {
+    font-size: 1.5em!important;
+}
+
+.productsList-container h2 {
+    color: #000000;
+}
+
+.table {
+    color:#000000;
+}
+
