@@ -54,9 +54,9 @@ function Inicio() {
                     </div>
                     <div className="mb-4">
                         <div className="card bg-dark text-white shadow">
-                            <a className="card-body" href='/'>
+                            <Link className="card-body" to='/apiUsers'>
                                 Ventas
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
