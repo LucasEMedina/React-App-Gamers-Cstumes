@@ -74,12 +74,10 @@ const usersApi = {
         }, [])
         return (
             <>
-                <ul>
                     {
                         !todos ? 'Cargando...' :
                             todos.length
                     }
-                </ul>
             </>
     )}
     

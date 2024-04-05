@@ -1,5 +1,5 @@
 import React from "react"
-import jordanWalke from "../assets/images/jordan-walke.png"
+import logo from "../assets/images/logo.png"
 
 function TopBar() {
   return (
@@ -20,7 +20,7 @@ function TopBar() {
                     <a className="nav-link dropdown-toggle" href="/" id="alertsDropdown">
                     <i className="fas fa-bell fa-fw"></i>
                         {/* -- Counter - Alerts -- */}
-                        <span className="badge badge-danger badge-counter">3+</span>
+                        <span className="badge badge-danger badge-counter"></span>
                     </a>
                 </li>
 
@@ -29,7 +29,7 @@ function TopBar() {
                     <a className="nav-link dropdown-toggle" href="/" id="messagesDropdown">
                         <i className="fas fa-envelope fa-fw"></i>
                         {/* -- Counter - Messages -- */}
-                        <span className="badge badge-danger badge-counter">7</span>
+                        <span className="badge badge-danger badge-counter"></span>
                     </a>
                 </li>
 
@@ -38,9 +38,9 @@ function TopBar() {
                 {/* -- Nav Item - User Information -- */}
                 <li className="nav-item-user dropdown no-arrow">
                     <a className="nav-link-user dropdown-toggle" href="/" id="userDropdown">
-                        <span className="name-user mr-2 d-none d-lg-inline text-gray-600 small">Jordan Walke</span>
+                        <span className="name-user mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                         <div className="div-img-user">
-                            <img className="img-profile rounded-circle" src={jordanWalke} alt="Jordan Walke - Creador de React" width="60" />
+                            <img className="img-profile rounded-circle" src={logo} alt="Jordan Walke - Creador de React" width="60" />
                         </div>
                     </a>
                 </li>

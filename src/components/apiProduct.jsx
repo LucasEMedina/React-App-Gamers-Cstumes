@@ -71,12 +71,46 @@ countProducts: () => {
     }, [])
     return (
         <>
-            <ul>
                 {
                     !todos ? 'Cargando...' :
                         todos.length
                 }
-            </ul>
+        </>
+)},
+
+lastProduct: () => {
+    const [todos, setTodos] = useState(null)
+    const fetchApi = async () => {
+        const response = await fetch('http://localhost:3000/api/v1/product')
+        console.log(response);
+        const responseJSON = await response.json()
+        console.log(responseJSON);
+        setTodos(responseJSON)
+    }
+    useEffect(() => {
+        fetchApi()
+    }, [])
+    return (
+        <>
+        <div className="col-lg-6 mb-4">
+            <div className="card shadow mb-4">
+                <div className="card-header py-3">
+                    <h5 className="m-0 font-weight-bold text-gray-800">Ultimo producto agregado</h5>
+                </div>
+                <div className="card-body">
+                    <div className="text-center">
+
+                        {!todos ? 'Cargando...' :
+                        <>
+                            <img src={todos.image} alt="last product" />
+                        </>
+                        }
+
+                    </div>
+                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver Detalle</a>
+                </div>
+            </div>
+        </div>
         </>
 )}
 }

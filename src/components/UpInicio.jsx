@@ -35,11 +35,11 @@ function UpInicio() {
 						<div className="card-body">
 							<div className="row no-gutters align-items-center">
 								<div className="col mr-2">
-									<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Total Ventas</div>
-									<div className="h5 mb-0 font-weight-bold text-gray-800">79</div>
+									<div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Categorias</div>
+									<div className="h5 mb-0 font-weight-bold text-gray-800">3</div>
 								</div>
 								<div className="col-auto">
-								<i className="fas bi bi-cash-coin fa-2x"></i>
+								<i className="bi bi-boxes fa-2x"></i>
 								</div>
 							</div>
 						</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import productsApi from "./apiProduct";;
+import productsApi from "./apiProduct";
 
 function ProductsList() {
   return (
