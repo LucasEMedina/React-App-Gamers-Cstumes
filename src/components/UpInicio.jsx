@@ -1,4 +1,6 @@
 import React from 'react'
+import usersApi from './apiUsers'
+import productsApi from './apiProduct'
 
 function UpInicio() {
   return (
@@ -17,7 +19,7 @@ function UpInicio() {
 							<div className="row no-gutters align-items-center">
 								<div className="col mr-2">
 									<div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Cantidad de Productos</div>
-									<div className="h5 mb-0 font-weight-bold text-gray-800">21</div>
+									<div className="h5 mb-0 font-weight-bold text-gray-800">{productsApi.countProducts()}</div>
 								</div>
 								<div className="col-auto">
 								<i className="bi bi-box-seam-fill fas fa-2x"></i>
@@ -52,7 +54,7 @@ function UpInicio() {
 								<div className="col mr-2">
 									<div className="text-xs font-weight-bold text-warning text-uppercase mb-1">Cantidad de Personajes
 									</div>
-									<div className="h5 mb-0 font-weight-bold text-gray-800">49</div>
+									<div className="h5 mb-0 font-weight-bold text-gray-800">{usersApi.countUsers()}</div>
 								</div>
 								<div className="col-auto">
 								<i className="bi bi-person-fill-check fas fa-2x"></i>

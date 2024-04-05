@@ -3,9 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import UpInicio from './UpInicio';
 import Inicio from './Inicio';
 import ProductsList from './ProductsList';
-import CategoriasList from './CategoriasList';
 import PersonajesList from './PersonajesList';
-import ApiUsers from "./apiUsers";
+import CategoriasList from './CategoriasList';
 
 function ContentRowTop() {
   return (
@@ -24,7 +23,6 @@ function ContentRowTop() {
 				<Route exact path='/productsList' element={<ProductsList/>} />
 				<Route exact path='/categoriasList' element={<CategoriasList/>} />
 				<Route exact path='/personajesList' element={<PersonajesList/>} />
-				<Route exact path='/apiUsers' element={<ApiUsers/>} />
 				
 			</Routes>	
 		</div>

@@ -52,13 +52,7 @@ function Inicio() {
                             </Link>	
                         </div>
                     </div>
-                    <div className="mb-4">
-                        <div className="card bg-dark text-white shadow">
-                            <Link className="card-body" to='/apiUsers'>
-                                Ventas
-                            </Link>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
