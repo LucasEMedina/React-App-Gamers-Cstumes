@@ -81,7 +81,7 @@ countProducts: () => {
 lastProduct: () => {
     const [todos, setTodos] = useState(null)
     const fetchApi = async () => {
-        const response = await fetch('http://localhost:3000/api/v1/product')
+        const response = await fetch('http://localhost:3000/api/v1/last-product')
         console.log(response);
         const responseJSON = await response.json()
         console.log(responseJSON);
@@ -102,12 +102,16 @@ lastProduct: () => {
 
                         {!todos ? 'Cargando...' :
                         <>
-                            <img src={todos.image} alt="last product" />
+                            
+                            <img id="last-prod-img" src={todos.image} alt="last product" />
+                            <h5>{todos.name} </h5>
+                            <h5>$ {todos.price}</h5>
+                            <a className="btn btn-danger" href={"http://localhost:3000/products/detail/" + todos.id } >Ver Detalle</a>
                         </>
                         }
 
                     </div>
-                    <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">Ver Detalle</a>
+                    
                 </div>
             </div>
         </div>
